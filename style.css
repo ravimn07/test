@@ -1,0 +1,230 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* nevigetion bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(129, 112, 112);
+    position: relative;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navigetion bar : logo and image */
+ #logo{
+             background-color:rgb(173, 136, 136);
+ }
+
+ #logo img{
+    height: 56px;
+    margin: 34px 45px;
+ }
+
+/*navigetion bar : list styling */
+
+#navbar ul{
+    display: flex;
+    background-color: rgb(102, 66, 66);
+}
+
+
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+
+    color: black;
+    background-color:rgba(112, 47, 47, 0.096);
+}
+
+/* Home section */
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 500px;  ;
+    align-items: center;
+}
+
+#Home::before{
+    content:"";
+    position: absolute;
+    background: url('../wall.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#Home h1{
+    color:rgb(119, 63, 63);
+    text-align: center;
+}
+
+
+#Home h1{
+    color:rgb(119, 63, 63);
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services section */
+#Services{
+    margin: 34px;
+    display: flex;
+}
+.box{
+    border: 2px solid rgb(90, 42, 42);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(197, 176, 176);
+}
+#Services.box img{
+    height: 50pxs;
+    display: block;
+    margin: auto;
+    padding: 34px;
+}
+/* viwer section */
+#viwer-section{
+   /* background: url('../optional cover.jpg'); */
+    position: relative;
+    
+
+}
+#viwer-section ::before{
+    content:"" ;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3 ;
+}
+#viwers{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.viwer-comment{
+    padding: 34px;
+}
+
+#viwers img{
+    height: auto;
+
+   
+}
+
+/* contact section*/
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   /*background: url(../tiger.jpg) no-repeat center center/cover;*/
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding-bottom: 9px 20px;
+     
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secoundry{
+    font-size:1.5rem;
+    padding: 10px;
+}
+
+.btn{
+     padding: 6px 20px;
+     border: 2px solid black;
+     background-color: burlywood;
+     color: white;
+     margin: 17px;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
